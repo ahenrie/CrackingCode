@@ -1,6 +1,6 @@
-package main
+package questions
 
-func allUniqueChars(inString string) bool {
+func AllUniqueChars(inString string) bool {
 	seen := make(map[rune]bool)
 
 	for _, char := range inString {
