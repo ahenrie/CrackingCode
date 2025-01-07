@@ -8,7 +8,8 @@ func main() {
 	string1 := "abc"
 	string2 := "cba"
 	string3 := "aabc"
-	stringURL := "Mr John Smith    "
+	stringURL := "Mr John Smith     "
+	PalPerm := "Tact Coa"
 
 	perm, answer := questions.ArePermutations(string1, string2)
 	println(perm, answer)
@@ -23,5 +24,7 @@ func main() {
 	println(unique)
 
 	println(questions.UrlMaker(stringURL))
+
+	questions.PalPerm(PalPerm)
 
 }
