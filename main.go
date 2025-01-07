@@ -1,11 +1,14 @@
 package main
 
-import "github.com/CrackingCode/arrays_and_strings/questions"
+import (
+	"github.com/CrackingCode/arrays_and_strings/questions"
+)
 
 func main() {
 	string1 := "abc"
 	string2 := "cba"
 	string3 := "aabc"
+	stringURL := "Mr John Smith    "
 
 	perm, answer := questions.ArePermutations(string1, string2)
 	println(perm, answer)
@@ -18,5 +21,7 @@ func main() {
 
 	unique = questions.AllUniqueChars(string1)
 	println(unique)
+
+	println(questions.UrlMaker(stringURL))
 
 }
