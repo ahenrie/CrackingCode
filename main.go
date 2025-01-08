@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/CrackingCode/arrays_and_strings/questions"
 )
 
@@ -25,6 +27,7 @@ func main() {
 
 	println(questions.UrlMaker(stringURL))
 
-	questions.PalPerm(PalPerm)
+	isPalPerm := questions.PalPerm(PalPerm)
+	fmt.Printf("The string: %v yields: %v", PalPerm, isPalPerm)
 
 }
