@@ -13,6 +13,7 @@ func main() {
 	string4 := "bbc"
 	stringURL := "Mr John Smith     "
 	PalPerm := "Tact Coa"
+	stringCompression := "aabcccddddeffaaaaaa       "
 
 	perm, answer := questions.ArePermutations(string1, string2)
 	println(perm, answer)
@@ -32,5 +33,7 @@ func main() {
 	fmt.Printf("The string: %v yields: %v", PalPerm, isPalPerm)
 	println("")
 	println(questions.OneWay(string1, string4))
+
+	println(questions.StringCompression(stringCompression))
 
 }
