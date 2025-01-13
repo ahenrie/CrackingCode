@@ -36,4 +36,5 @@ func main() {
 
 	println(questions.StringCompression(stringCompression))
 
+	questions.FizzBuzz(20)
 }
